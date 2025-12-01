@@ -15,7 +15,7 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
   );
 
   if (req.method === "GET") {
-    return res.status(200).json({ message: "Proxy is working" });
+    return res.status(200).json({ message: "Proxy" });
   }
 
   // پاسخ به درخواست‌های OPTIONS (Preflight)
