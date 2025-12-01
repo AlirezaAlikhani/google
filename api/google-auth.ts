@@ -1,6 +1,5 @@
 import type { VercelRequest, VercelResponse } from "@vercel/node";
 
-
 export default async function handler(req: VercelRequest, res: VercelResponse) {
   // تنظیم CORS برای درخواست‌های Cross-Origin
   res.setHeader("Access-Control-Allow-Credentials", "true");
@@ -15,7 +14,7 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
   );
 
   if (req.method === "GET") {
-    return res.status(200).json({ message: "Proxy" });
+    return res.status(200).json({ message: "Proxy i" });
   }
 
   // پاسخ به درخواست‌های OPTIONS (Preflight)
@@ -59,3 +58,5 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
   }
 }
 // //
+
+
